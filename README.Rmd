@@ -1,0 +1,57 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# coinflip538
+
+The goal of coinflip538 is to solve a 538 puzzle, which goes like this: 
+
+> If you have a fake coin that returns head with probability 0.6 and a fair coin
+  which returns head and tail with probability 0.5, how many times to you need 
+  to flip the coins to know with 95% certainty which coin is fake?
+  
+This repo illustrates how to solve this question with base R + tidyverse but
+no additional statistical library and in a functional programming style. To 
+understand the source code, solve the problem "bottom-up". I.e. look at 
+`p_fair()` and `p_fake()` to compute probabilities of fair and fake coins 
+with just one flip first. 
+Then, conditional independence with `p_prod_fair_fake()`. Next, we put it 
+together with summing the probabilities resulting form all combinations up 
+(`p_fake_gt_fair()`) and a final function (`p_correctly_identify_coins()`) 
+potentially allows for guessing in situations when the heads of both coins
+have the same count.
+
+Note that every function is just a few lines long, has consistent naming of 
+arguments, variable names, simple input and output.
+
+
+
+## Installation
+
+```{r}
+library(coinflip538)
+data <- tibble::tibble(
+  N = 1:150,
+  p = purrr::map_dbl(.data$N, p_correctly_identify_coins)
+)
+
+ggplot2::ggplot(data, ggplot2::aes(x = N, y = p)) + 
+  ggplot2::geom_line()
+
+
+p_correctly_identify_coins(143, allow_guessing = FALSE)
+p_correctly_identify_coins(134)
+
+```
+

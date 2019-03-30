@@ -1,0 +1,20 @@
+Package: coinflip538
+Type: Package
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Lorenz",
+           family = "Walthert",
+           role = c("aut", "cre"),
+           email = "lorenz.walthert@icloud.com")
+Description: What the package does (one paragraph).
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    purrr,
+    dplyr,
+    tibble
+RoxygenNote: 6.1.1
+Suggests: 
+    ggplot2
