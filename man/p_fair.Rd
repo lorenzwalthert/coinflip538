@@ -2,7 +2,7 @@
 % Please edit documentation in R/base.R
 \name{p_fair}
 \alias{p_fair}
-\title{How likely are `n` heads after `N` trials with the fair coin?}
+\title{How likely are \code{n} heads after \code{N} trials with the fair coin?}
 \usage{
 p_fair(n, N)
 }
@@ -15,5 +15,5 @@ p_fair(n, N)
 A probability.
 }
 \description{
-How likely are `n` heads after `N` trials with the fair coin?
+How likely are \code{n} heads after \code{N} trials with the fair coin?
 }

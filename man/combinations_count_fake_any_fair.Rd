@@ -5,7 +5,7 @@
 \alias{combinations_count_fake_gt_fair}
 \alias{combinations_count_fake_eq_fair}
 \alias{combinations_count_fake_lt_fair}
-\title{Return possible combinations of heads from the fake and fair coins after `N`
+\title{Return possible combinations of heads from the fake and fair coins after \code{N}
 trials}
 \usage{
 combinations_count_fake_any_fair(comparator = function(x, y) rep(TRUE,
@@ -19,11 +19,11 @@ combinations_count_fake_lt_fair(...)
 }
 \arguments{
 \item{comparator}{Function to be applied for filtering of all combinations.
-E.g. with [magrittr::is_greater_than()], the function will just return the
+E.g. with \code{\link[magrittr:is_greater_than]{magrittr::is_greater_than()}}, the function will just return the
 combinations where the fake coin count is higher than the fair coun count.}
 }
 \description{
-Note that `combinations_count_fake_any_fair()`'s only purpose is to be used
+Note that \code{combinations_count_fake_any_fair()}'s only purpose is to be used
 when creating the other functions in order to avoid code duplication.
 }
 \section{Functions}{

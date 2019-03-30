@@ -6,7 +6,7 @@
 \alias{p_fake_eq_fair}
 \alias{p_fake_lt_fair}
 \title{How likely is it that we have more, less or equally many fake and fair heads
-after `N` trials?}
+after \code{N} trials?}
 \usage{
 p_fake_any_fair(comparator, N)
 
@@ -26,18 +26,18 @@ value for each of them.}
 A probability.
 }
 \description{
-`p_fake_any_fair()`'s only purpose is to use it for creating the other
+\code{p_fake_any_fair()}'s only purpose is to use it for creating the other
 functions.
 }
 \section{Functions}{
 \itemize{
 \item \code{p_fake_gt_fair}: Returns the probability that we have a higher
-head count for the fake than for the fair coun after `N` trials.
+head count for the fake than for the fair coun after \code{N} trials.
 
 \item \code{p_fake_eq_fair}: Returns the probability that we have the same
-head count for the fake and for the fair coun after `N` trials.
+head count for the fake and for the fair coun after \code{N} trials.
 
 \item \code{p_fake_lt_fair}: Returns the probability that we have a lower
-head count for the fake than for the fair coun after `N` trials.
+head count for the fake than for the fair coun after \code{N} trials.
 }}
 

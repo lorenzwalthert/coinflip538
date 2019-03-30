@@ -2,7 +2,7 @@
 % Please edit documentation in R/base.R
 \name{p_prod_fair_fake}
 \alias{p_prod_fair_fake}
-\title{How likely are `n_fake` fake heads and `n_fair` fair heads after `N` trials?}
+\title{How likely are \code{n_fake} fake heads and \code{n_fair} fair heads after \code{N} trials?}
 \usage{
 p_prod_fair_fake(n_fake, n_fair, N)
 }
@@ -17,6 +17,6 @@ p_prod_fair_fake(n_fake, n_fair, N)
 A probability.
 }
 \description{
-Returns the probability for the constellation of fake and fair heads with `N`
+Returns the probability for the constellation of fake and fair heads with \code{N}
 trials. Because the events are independent, we can factorize.
 }

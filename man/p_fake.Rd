@@ -2,7 +2,7 @@
 % Please edit documentation in R/base.R
 \name{p_fake}
 \alias{p_fake}
-\title{How likely are `n` heads after `N` trials with the fake coin?}
+\title{How likely are \code{n} heads after \code{N} trials with the fake coin?}
 \usage{
 p_fake(n, N)
 }
@@ -15,5 +15,5 @@ p_fake(n, N)
 A probability.
 }
 \description{
-How likely are `n` heads after `N` trials with the fake coin?
+How likely are \code{n} heads after \code{N} trials with the fake coin?
 }

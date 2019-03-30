@@ -2,7 +2,7 @@
 % Please edit documentation in R/base.R
 \name{p_correctly_identify_coins}
 \alias{p_correctly_identify_coins}
-\title{How likely are we to identify the fake count after `N` trials?}
+\title{How likely are we to identify the fake count after \code{N} trials?}
 \usage{
 p_correctly_identify_coins(N, allow_guessing = TRUE)
 }
@@ -16,5 +16,5 @@ head counts, we should make a guess.}
 A probability.
 }
 \description{
-How likely are we to identify the fake count after `N` trials?
+How likely are we to identify the fake count after \code{N} trials?
 }
